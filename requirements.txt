@@ -1,0 +1,52 @@
+# ============================================================================
+# requirements.txt
+# HMLFF-Net: Hybrid Multi-Level Feature Fusion Network
+# Python 3.12 | TensorFlow 2.x + PyTorch dual-stack
+# Install:  pip install -r requirements.txt
+# ============================================================================
+
+# ---- Core numerics / IO ----
+numpy>=1.26
+pandas>=2.2
+scipy>=1.12
+openpyxl>=3.1
+sqlite-utils>=1.31
+tqdm>=4.66
+
+# ---- Imaging ----
+opencv-python-headless>=4.9
+scikit-image>=0.22
+scikit-learn>=1.4
+Pillow>=10.2
+albumentations>=1.4
+
+# ---- Deep learning: PyTorch stack (primary) ----
+torch>=2.2
+torchvision>=0.17
+timm>=0.9.12                # EfficientNetV2 / MobileViT / ViT
+ultralytics>=8.1           # YOLOv11 segmentation
+grad-cam>=1.5       # GradCAM / GradCAM++ / ScoreCAM
+
+# ---- Deep learning: TensorFlow stack (comparative CNN baselines) ----
+# tensorflow>=2.16
+# keras>=3.0
+
+# ---- Bayesian optimization ----
+optuna>=3.6
+
+# ---- Explainability ----
+shap>=0.45
+lime>=0.2
+
+# ---- Dimensionality reduction / visualization ----
+umap-learn>=0.5
+matplotlib>=3.8
+seaborn>=0.13
+
+# ---- Reporting ----
+reportlab>=4.1
+pdfplumber>=0.10
+
+# ---- Utilities ----
+PyYAML>=6.0
+joblib>=1.4
